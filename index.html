@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherCast Pro </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-cloud-sun"></i> Weather<span>Cast</span></div>
+            <!-- <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+            </ul> -->
+        </div>
+    </nav>
+
+    <!-- Caption Banner -->
+    <div class="caption-banner">
+        <p><i class="fas fa-cloud-sun"></i> Get real-time weather updates for any location worldwide</p>
+    </div>
+
+    <!-- Main Weather Container -->
+    <div class="weather-container">
+        <video autoplay muted loop id="weather-video">
+            <source src="assets/videos/default.mp4" type="video/mp4">
+        </video>
+        
+        <div class="weather-info">
+            <h1>Weather App</h1>
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city...">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <div class="weather-details">
+                <h2 id="city-name">Bathinda</h2>
+                <p id="temperature">25°C</p>
+                <p id="weather-condition">Sunny</p>
+                <div class="additional-info">
+                    <p><i class="fas fa-tint"></i> Humidity: <span id="humidity">65</span>%</p>
+                    <p><i class="fas fa-wind"></i> Wind: <span id="wind-speed">12</span> km/h</p>
+                    <p><i class="fas fa-compress-alt"></i> Pressure: <span id="pressure">1012</span> hPa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 WeatherCast Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="particle.js"></script>
+</body>
+</html>
