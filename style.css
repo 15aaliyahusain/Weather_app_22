@@ -309,31 +309,86 @@ body {
         opacity: 0;
     }
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
+        align-items: center;
         gap: 15px;
     }
-    
+
+    .logo {
+        margin-left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
     .nav-links {
         gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .caption-banner {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         margin-top: 110px;
+        padding: 12px 10px;
     }
-    
+
+    .weather-info {
+        width: 90%;
+        padding: 2rem 1.2rem;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #search-btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .additional-info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #temperature {
+        font-size: 2.5rem;
+    }
+
+    #weather-condition {
+        font-size: 1.2rem;
+    }
+
+    #city-name {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .caption-banner {
+        font-size: 0.85rem;
+        margin-top: 120px;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
     .weather-info {
         padding: 1.5rem;
     }
-    
-    .additional-info {
-        grid-template-columns: 1fr;
+
+    .search-box {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #search-btn {
+        width: 100%;
     }
 }
 
